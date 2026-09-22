@@ -1,3 +1,8 @@
-a = int(input("請輸入整數a："))
-b = int(input("請輸入整數b："))
-print(f"{a} + {b} = {a + b}")
+import sys
+
+
+values = sys.stdin.read().split()
+if len(values) >= 2:
+	a, b = map(int, values[:2])
+	total = a + b
+	print(f"{a}+{b}={total}")
