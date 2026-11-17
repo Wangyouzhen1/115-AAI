@@ -3,7 +3,7 @@ import sys
 
 def main():
 	n = int(sys.stdin.readline())
-	playlist = sys.stdin.readline().split() if n > 0 else []
+	playlist = sys.stdin.readline().split()
 	q = int(sys.stdin.readline())
 
 	for _ in range(q):
