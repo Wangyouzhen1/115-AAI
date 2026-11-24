@@ -1,10 +1,12 @@
 N = int(input())
-value = N
+current = N
 pass_number = 1
 
-while value > 9:
-	value = sum(int(digit) for digit in str(value))
-	print(f"Pass {pass_number} : {value}")
+while True:
+	current = sum(int(digit) for digit in str(current))
+	print(f"Pass {pass_number} : {current}")
+	if current < 10:
+		break
 	pass_number += 1
 
-print(f"Digital Root of {N} : {value}")
+print(f"Digital Root of {N} : {current}")
